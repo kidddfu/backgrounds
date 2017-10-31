@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+            body {
+                background: #060e1b;
+                overflow: hidden;
+                position: relative;
+                font-family:"微软雅黑";
+                font-family: "Microsoft YaHei"!important;
+              }
+              *{
+                  margin: 0;
+                  font-family: "Microsoft YaHei"!important;
+              }
+
+              /*要将canvas作为背景，需要将canvas的z-index设为-1，绝对定位*/
+              .backgroundBg{
+                z-index: -1;
+                position: absolute;
+                opacity: 0.5;
+              }
+    </style>
+</head>
+
+<body>
+    <canvas id="backgroundBg" class="backgroundBg" height= "900"></canvas>
+    <div style="width:30px;height:30px;border:1px solid red;"></div>
+    <script src="./background.js"> </script>
+
+</body>
+
+</html>
